@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'concession-stand';
+  public title = 'Angular 9 Concession Stand';
 }
