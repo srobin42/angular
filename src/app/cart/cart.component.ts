@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { Observable, of } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
@@ -14,6 +15,7 @@ import { Item } from '../concession/item';
 export class CartComponent implements OnInit {
   public cartItems$: Observable<Item[]> = of([]);
   public cartItems: Item[] = [];
+  faShoppingCart = faShoppingCart;
 
   constructor(
     private cartService: CartService

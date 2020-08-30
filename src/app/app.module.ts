@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -19,9 +21,11 @@ import { InMemoryConcessionService } from './in-memory-concession.service';
   ],
   imports: [
     BrowserModule,
+    FontAwesomeModule,
     FormsModule,
     HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryConcessionService)
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryConcessionService),
+    HttpClientTestingModule
   ],
   providers: [
     ConcessionService,
