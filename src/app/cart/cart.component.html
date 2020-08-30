@@ -2,17 +2,17 @@
 	<h2>Cart <fa-icon [icon]="faShoppingCart"></fa-icon></h2>
 	
 	<div id="cartTable">
-		<table id="cartItems" class="table table-striped tablesorter">
+		<table id="cartItems" class="table table-striped">
 			<thead>
 				<tr>
-					<td>Quantity</td>
-					<td>Item</td>
-					<td>Total</td>
-					<td></td>
+					<th scope="col">Quantity</th>
+					<th scope="col">Item</th>
+					<th scope="col">Total</th>
+					<th scope="col"></th>
 				</tr>
 			</thead>
 			<tr *ngFor="let item of cartItems">
-				<td class="quantity">{{ item.quantity }}</td>
+				<th scope="row" class="quantity">{{ item.quantity }}</th>
 				<td class="name">{{ item.name }}</td>
 				<td class="price">{{ item.total  | currency:'USD':'symbol'}}</td>
 				<td class="button"><button class="btn btn-danger" (click)="deleteItem(item)">Remove</button></td>

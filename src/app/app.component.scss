@@ -1,4 +1,10 @@
-.title {
-  font-weight: bold;
-  color: green;
+:host {
+  .body, h2 {
+    margin-left: 5px;
+  }
+
+  .title {
+    font-weight: bold;
+    color: green;
+  }
 }

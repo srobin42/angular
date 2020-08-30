@@ -4,6 +4,11 @@ h2 {
   font-weight: bold;
 }
 
+table {
+  width: 50%;
+  margin-left: 5px;
+}
+
 thead {
   font-size: 12px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -21,5 +26,5 @@ img.conItem {
 
 
 button#addNew {
-    margin-top: 25px;
+  margin-top: 25px;
 }
